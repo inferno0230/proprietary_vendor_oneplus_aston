@@ -76,13 +76,15 @@
         <param key="max_sessions" value="128"/>
         <param key="max_nonTunnel_sessions" value="4"/>
         <param key="logging_level" value ="7" />
-        <param key="context_manager_enable" value ="true" />
+        <param key="context_manager_enable" value ="false" />
         <param key="lpi_logging_enable" value ="false" />
         <param key="upd_dedicated_be" value ="false" />
         <param key="signal_handler" value ="true" />
         <param key="device_mux_config" value ="false" />
         <param key="upd_duty_cycle_enable" value="false" />
         <param key="upd_virtual_port" value ="false" />
+        <!-- YeWenliang@MULTIMEDIA.AUDIODRIVER, 2023/06/12, add for disable upd proximity -->
+        <param key="upd_proximity_enable" value ="false" />
         <!-- Jie.Du@MULTIMEDIA.AUDIODRIVER.SMARTPA, 2021/06/22, add for engineermode test -->
         <param key="oplus_mic_count" value ="2" />
         <!-- YeWenliang@MULTIMEDIA.AUDIODRIVER, 2021/08/12, Add for mulit scene record -->
@@ -113,18 +115,16 @@
         <!-- YeWenliang@MULTIMEDIA.AUDIODRIVER, 2022/09/05, Add for mute speaker before device stop -->
         <param key="mute_speaker_enable" value="false"/>
         <!-- Huangzilong@MULTIMEDIA.AUDIODRIVER, 2022/09/20, Add for 4ch aec -->
-        <param key="oplus_4ch_aec_enable" value="false"/>
+        <param key="oplus_4ch_aec_enable" value="true"/>
         <param key="oplus_ref_channel_count" value ="2" />
         <!-- Minyi.Hu@MULTIMEDIA.AUDIODRIVER, 2022/08/26, Add for tfa smart pa power control -->
         <param key="lowbattery_speaker_profile_support" value="true"/>
-        <!-- Jianfeng.Qiu@MULTIMEDIA.AUDIODRIVER.OPLUS_VDF_LEFT_SPEAKER_MUTE, 2021/10/16, Add for mute left speaker in ringtone -->
-        <param key="mute_left_speaker" value="true"/>
         <!-- Jie.Du@MULTIMEDIA.AUDIODRIVER, 2023/02/22, add for support call record in ocar mode -->
         <param key="ocar_mode_support" value="true"/>
         <param key="speaker_ringtone_ckv" value="true"/>
         <param key="speaker_auto_calibration" value="true"/>
-        <!-- Zhao.Pan@MULTIMEDIA.AUDIODRIVER.FEEDBACK, 2023/11/29, add for audio daemon -->
-        <param key="oplus_audio_daemon_agm" value="true"/>
+	<!-- Zhao.Pan@MULTIMEDIA.AUDIODRIVER.FEEDBACK, 2023/11/29, add for audio daemon -->
+	<param key="oplus_audio_daemon_agm" value="true"/>
     </config_params>
     <config_volume>
         <use_volume_set_param>1</use_volume_set_param>
@@ -1522,7 +1522,8 @@
         </capture_profile_list>
         <acd_platform_info>
             <config>
-                <param acd_enable="true" />
+                <!-- YeWenliang@MULTIMEDIA.AUDIODRIVER, 2023/06/12, disable acd -->
+                <param acd_enable="false" />
             </config>
             <!-- ACD -->
             <stream_config>
@@ -1735,7 +1736,7 @@
             <stream_config>
                 <name>HOTWORD_VOICE_UI</name>
                 <param vendor_uuid="7038ddc8-30f2-11e6-b0ac-40a8f03d3f15" />
-                <param get_module_version="true" />
+                <param get_module_version="false" />
                 <param merge_first_stage_sound_models="false" />
                 <param capture_keyword="2000" />
                 <param client_capture_read_delay="2000" />

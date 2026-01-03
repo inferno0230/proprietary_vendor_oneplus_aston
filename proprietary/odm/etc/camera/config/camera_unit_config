@@ -245,6 +245,7 @@
     "com.oplus.sat.need.set.zoomratio":"1",
     "com.oplus.feature.breeno.scan":"0",
     "com.oplus.third.cameraunit.support":"1",
+    "com.oplus.third.front.single.stream":"com.ss.android.ugc.aweme",
     "com.oplus.xpan.main.picturesize":"8192x3724",
     "com.oplus.rear.portrait.sat.fullbodysize": "4096x3072x1632x1224",
     "com.oplus.rear.portrait.sat.halfbodysize": "3136x2352x1600x1200",

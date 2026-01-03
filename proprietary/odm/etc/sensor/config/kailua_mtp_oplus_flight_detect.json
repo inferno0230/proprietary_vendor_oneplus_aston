@@ -8,7 +8,7 @@
     ".config":{
       "owner": "flight_detect",
       "is_available":{ "type": "int", "ver": "0",
-        "data": "1"
+        "data": "0"
       },
       "acc_threshold":{ "type": "flt", "ver": "0",
         "data": "0.2"

@@ -863,22 +863,23 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_alsps.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_alsps.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_alsps_hw_tcs3720.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_alsps_hw_tcs3720.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_bmi26x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_bmi26x.json \
-    vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_bmp380.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_bmp380.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_cct_rear.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_cct_rear.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_freefall.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_freefall.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_mmc56x3x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_mmc56x3x.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_oplus_flight_detect.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_oplus_flight_detect.json \
+    vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_oplus_flight_scene.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_oplus_flight_scene.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_oplus_lay.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_oplus_lay.json \
+    vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_oplus_measurement.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_oplus_measurement.json \
+    vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_oplus_rotation_detect.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_oplus_rotation_detect.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_pocket.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_pocket.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/kailua_mtp_smart_prox.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_smart_prox.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/config/lux_aod.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lux_aod.json \
     vendor/oneplus/aston/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
     vendor/oneplus/aston/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
-    vendor/oneplus/aston/proprietary/odm/etc/wifi/kiwi/bdwlan.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0a \
-    vendor/oneplus/aston/proprietary/odm/etc/wifi/kiwi/bdwlan.b0ie:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0ie \
     vendor/oneplus/aston/proprietary/odm/etc/wifi/kiwi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.elf \
     vendor/oneplus/aston/proprietary/odm/etc/wifi/kiwi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/regdb.bin \
-    vendor/oneplus/aston/proprietary/odm/firmware/fastchg/23861/charging_hyper_mode_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/23861/charging_hyper_mode_config.txt \
+    vendor/oneplus/aston/proprietary/odm/etc/wifi/kiwi/regdb_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/regdb_version \
+    vendor/oneplus/aston/proprietary/odm/firmware/fastchg/23801/charging_hyper_mode_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/23801/charging_hyper_mode_config.txt \
     vendor/oneplus/aston/proprietary/odm/firmware/fastchg/bms_heating_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/bms_heating_config.txt \
     vendor/oneplus/aston/proprietary/odm/firmware/fastchg/charge_time_config.csv:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charge_time_config.csv \
     vendor/oneplus/aston/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
@@ -960,7 +961,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/odm/vendor/firmware/uff_spi.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b07 \
     vendor/oneplus/aston/proprietary/odm/vendor/firmware/uff_spi.b08:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b08 \
     vendor/oneplus/aston/proprietary/odm/vendor/firmware/uff_spi.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.mdt \
-    vendor/oneplus/aston/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     vendor/oneplus/aston/proprietary/vendor/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json \
     vendor/oneplus/aston/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/oneplus/aston/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -1336,7 +1336,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     libtfadsp_sb4_0_rx \
     libtfadsp_sb4_0_tx \
-    EuiccGoogle \
     vendor.qti.camera.aon-impl-1.3.xml \
     vendor.qti.camera.postproc-impl.xml \
     vendor.qti.camera.provider.xml \

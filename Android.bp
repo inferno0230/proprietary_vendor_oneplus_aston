@@ -7659,6 +7659,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libAlgoProcess",
                 "libapsjpeg",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -7707,6 +7708,7 @@ cc_prebuilt_library_shared {
                 "libselinux",
                 "libexif-jpeg-aps",
                 "libextendfile",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -8233,6 +8235,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libPolarrRender",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -8732,6 +8735,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -11554,7 +11558,9 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libsaveshaderbin.so",
             ],
             shared_libs: [
+                "libcreatebinForBaseretouch",
                 "libcreatebin",
+                "libcreatebinForFaceretouch",
                 "libGLESv3",
                 "libEGL",
                 "libdl",
@@ -11630,6 +11636,8 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libsharebuffer_impl.so",
             ],
             shared_libs: [
+                "libdmabufheap",
+                "libnativewindow",
                 "libui",
                 "libutils",
                 "libcutils",
@@ -12227,19 +12235,6 @@ prebuilt_rfsa {
     src: "proprietary/odm/lib/rfsa/adsp/libtfadsp_sb4_0_tx.so",
     relative_install_path: "adsp",
     device_specific: true,
-}
-
-android_app_import {
-    name: "EuiccGoogle",
-    owner: "oneplus",
-    apk: "proprietary/product/priv-app/EuiccGoogle/EuiccGoogle.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
 }
 
 prebuilt_etc_xml {
